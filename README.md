@@ -1,60 +1,23 @@
-# p5.js Template
+# HW09B
 
-This is a README file that can be used to describe and document your assignment.
+## Concept
+This exercise creates dynamic, interactive art by transforming pixel arrays into kaleidoscopic patterns, driven entirely by user input. The lack of a camera is addressed by simulating dynamic input through noise functions and user-adjustable parameters.
 
-Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
+## Design Process
 
----
----
+1. Creative Approach:
+   Explored kaleidoscopic symmetry to produce mesmerizing visuals.
+   Simulated motion and input with noise and sliders for a fully interactive experience.
 
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
+2. Core Features:
 
-**bold text**
+   Kaleidoscopic Effect: Symmetrical patterns are dynamically generated using p5.js's rotate() and translate() functions.
+   User Interaction:
+      Symmetry Adjustment: A slider enables users to control the number of symmetrical sections.
+      Dynamic Patterns: Shapes and colors evolve over time based on noise functions.
 
-*italicized text*
+3. Technical Implementation:
 
-~~strikethrough text~~
-
-Ordered List:
-1. First item
-2. Second item
-3. Third item
-
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2024f-b.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
+   Symmetry achieved by iterating through angular divisions using TWO_PI / symmetry.
+   Noise-driven randomness creates smooth transitions in colors and shapes.
+   DOM elements (createSlider()) allow real-time adjustment of parameters.
